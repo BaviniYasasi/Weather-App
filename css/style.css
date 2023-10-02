@@ -865,6 +865,10 @@ margin-left: 3vw;
 border-radius: 1vw;
 }
 
+.map-place{
+
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .navbar{
@@ -1099,17 +1103,17 @@ border-radius: 1vw;
     width: 25vw;
     border-radius: 2vw 0vw 0vw 2vw;
     margin-left: 6%;
-    height: 45vw;
+    height: 55vw;
 }
 .weather-conditions{
     background:rgba(255, 255, 255, 0.5);
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 46vw;
+    width: 49vw;
     margin-left: 1.5vw;
     border-radius: 0vw 2vw 2vw 0vw;
-    height: 45vw;
+    height: 55vw;
 }
 
 
@@ -1188,7 +1192,7 @@ border-radius: 1vw;
     width: 72vw;
     height: 40vw;
     border-radius: 2vw; 
-    margin-top: 8vw;
+    margin-top: 18vw;
 
 }
 .img-map{
@@ -2853,8 +2857,8 @@ to { box-shadow: 0 0 100px 15px #F4F6AD; }
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    margin-left: 9.5%;
+    width: 35vw;
+    margin-left: 8.25%;
     border-radius: 0vw 2vw 2vw 0vw;
 }
 
@@ -2914,7 +2918,7 @@ to { box-shadow: 0 0 100px 15px #F4F6AD; }
     padding: 1vw;
 }
 .sun-set{
-    margin-left: 3.5vw;
+    margin-left: 1.5vw;
     color:black;
     font-size: 1.5vw;
     font-weight: bold;
@@ -3797,6 +3801,7 @@ to { box-shadow: 0 0 100px 15px #F4F6AD; }
     border-radius: 2vw; 
 
 }
+
 /* .img-map{
     border-radius: 2vw;
     width: 38vw;
