@@ -14,7 +14,7 @@ findBtnClicked();
 function findBtnClicked(){
     $.ajax({
         method : "GET",
-        url : `http://api.weatherapi.com/v1/current.json?key=47d04998957e478aae720234232609&q=${searchFeild.value}`,
+        url : `https://api.weatherapi.com/v1/current.json?key=47d04998957e478aae720234232609&q=${searchFeild.value}`,
         success : (resp) => {
 
             currLocation.text(resp.location.name)
@@ -40,7 +40,7 @@ function findBtnClicked(){
 function forecasat(){
     $.ajax({
         method : "GET",
-        url : `http://api.weatherapi.com/v1/forecast.json?key=47d04998957e478aae720234232609&q=${searchFeild.value}&days=4`,
+        url : `https://api.weatherapi.com/v1/forecast.json?key=47d04998957e478aae720234232609&q=${searchFeild.value}&days=4`,
         success : (con) => {
             $("#date-1").text(con.forecast.forecastday[1].date)
             $("#date-2").text(con.forecast.forecastday[2].date)
@@ -66,7 +66,7 @@ function previous(){
     for(let i=1;i<8;i++){
         $.ajax({
             method : "GET",
-            url : `http://api.weatherapi.com/v1/history.json?key=47d04998957e478aae720234232609&q=${searchFeild.value}&dt=${last7Days[i]}`,
+            url : `https://api.weatherapi.com/v1/history.json?key=47d04998957e478aae720234232609&q=${searchFeild.value}&dt=${last7Days[i]}`,
             success : (con) => {
                 $("#pre-day-"+i).text(con.forecast.forecastday[0].date)
                 $("#pre-day-"+i+"-day").text(reverseDayArray[currDate+(i+5)])
